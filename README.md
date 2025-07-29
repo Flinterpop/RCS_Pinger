@@ -1,5 +1,5 @@
 # RCS_Pinger
-App that periodically pings network notes from predefined lists
+App that periodically pings network nodes from predefined lists
 
 Uses wxWidgets, wxFormBuilder and CMake.
 
