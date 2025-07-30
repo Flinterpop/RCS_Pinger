@@ -14,10 +14,10 @@
 // first icon in the executable and the icons are sorted both by their order
 // and alphabetically (!), so put this icon first and give it a name
 // starting with "a"
-aaaaaaaa ICON "radar.ico"
+aaaaaaaa ICON "bungee.ico"
 
 // this icon is used with wxFrame::SetIcon()
-sample ICON "radar.ico"
+sample ICON "bungee.ico"
 
 // Note that wxUSE_RC_MANIFEST needs to be defined to 1 to embed the wx-defined
 // manifest, this is not done by default to avoid conflicts with the manifest
