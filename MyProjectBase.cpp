@@ -11,7 +11,7 @@
 
 MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, const wxPoint& pos, const wxSize& size, long style, const wxString& name ) : wxFrame( parent, id, title, pos, size, style, name )
 {
-	this->SetSizeHints( wxSize( 1485,1000 ), wxSize( 1500,1000 ) );
+	this->SetSizeHints( wxSize( 1485,1000 ), wxSize( 1500,1500 ) );
 
 	m_statusBar1 = this->CreateStatusBar( 1, wxSTB_SIZEGRIP, wxID_ANY );
 	m_menubar3 = new wxMenuBar( 0 );
@@ -35,7 +35,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 
 	m_staticText4 = new wxStaticText( this, wxID_ANY, _("Site Selector"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText4->Wrap( -1 );
-	bSizer91->Add( m_staticText4, 0, wxALL|wxEXPAND, 5 );
+	bSizer91->Add( m_staticText4, 0, wxALL, 5 );
 
 	m_comboBoxSites = new wxComboBox( this, wxID_ANY, _("RSIL"), wxDefaultPosition, wxDefaultSize, 0, NULL, 0 );
 	m_comboBoxSites->Append( _("22 Wing") );
@@ -43,16 +43,16 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_comboBoxSites->Append( _("4 Wing") );
 	m_comboBoxSites->Append( _("TSIL") );
 	m_comboBoxSites->Append( _("RSIL") );
-	bSizer91->Add( m_comboBoxSites, 0, wxALL|wxEXPAND, 5 );
+	bSizer91->Add( m_comboBoxSites, 0, wxALL, 5 );
 
 
-	bSizer2->Add( bSizer91, 1, wxEXPAND, 5 );
+	bSizer2->Add( bSizer91, 1, wxALIGN_TOP, 5 );
 
 	m_BN_RunOnce = new wxButton( this, wxID_ANY, _("Run Once"), wxDefaultPosition, wxDefaultSize, 0 );
-	bSizer2->Add( m_BN_RunOnce, 0, wxALL|wxEXPAND|wxFIXED_MINSIZE, 5 );
+	bSizer2->Add( m_BN_RunOnce, 0, wxALL|wxFIXED_MINSIZE, 5 );
 
 	m_BN_RunPeriodic = new wxButton( this, wxID_ANY, _("Run Periodic"), wxDefaultPosition, wxDefaultSize, 0 );
-	bSizer2->Add( m_BN_RunPeriodic, 0, wxALL|wxEXPAND|wxFIXED_MINSIZE, 5 );
+	bSizer2->Add( m_BN_RunPeriodic, 0, wxALL|wxFIXED_MINSIZE, 5 );
 
 	wxBoxSizer* bSizer5;
 	bSizer5 = new wxBoxSizer( wxVERTICAL );
@@ -94,7 +94,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer2->Add( bSizer8, 1, wxEXPAND, 5 );
 
 
-	bSizer18->Add( bSizer2, 1, wxFIXED_MINSIZE, 5 );
+	bSizer18->Add( bSizer2, 1, wxALIGN_TOP|wxFIXED_MINSIZE, 5 );
 
 	wxBoxSizer* bSizer28;
 	bSizer28 = new wxBoxSizer( wxVERTICAL );
@@ -133,7 +133,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer9->Add( m_textCtrl3, 0, wxALL|wxEXPAND, 10 );
 
 
-	bSizer18->Add( bSizer9, 1, wxALIGN_BOTTOM|wxEXPAND, 5 );
+	bSizer18->Add( bSizer9, 1, wxEXPAND, 5 );
 
 
 	this->SetSizer( bSizer18 );

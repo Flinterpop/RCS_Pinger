@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20...4.0.2) 
 #cmake_minimum_required(VERSION 3.14 FATAL_ERROR)
 
-project(BuilderTest LANGUAGES CXX)
+project(RCSPingTester LANGUAGES CXX)
 
 #set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:CONSOLE")
 
@@ -36,6 +36,14 @@ FetchContent_MakeAvailable(wxWidgets)
 # Our Project
 set(SOURCE_FILES
     hasMain.cpp
+	BG_ICMP.cpp
+	BG_ICMP.h
+	MyProject2MyFrame1.cpp
+	MyProject2MyFrame1.h
+	MyProjectBase.cpp
+	MyProjectBase.h
+	sample.rc
+	radar.ico
 )
 
 
